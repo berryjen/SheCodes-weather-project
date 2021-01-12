@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>weather app</title>
+  <meta charset="UTF-8" />
+  <link href="src2/style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <form id="search-form">
+    <div class="container">
+      <input type="search" id="cityInput" class="search" autofocus="on" placeholder="Search City" autocomplte="off" />
+    </div>
+    <div>
+      <input type="submit" value="GO" id="searchForm" class="go" autofocus=" on" placeholder="GO" autocomplte="off" />
+    </div>
+    <div id="current-location-button">
+      <input type="submit" value="Current" id="weatherInfo" class="description" autofocus=" on" placeholder="GO"
+        autocomplte="off" />
+    </div>
+  </form>
+  <ul>
+    <li id="date">
+      `${date}, ${time}`
+    </li>
+  </ul>
+
+  <h1 class="city-name" id="city">
+    Taipei city
+  </h1>
+  <h3 class="current-weather-condition">
+    <em>
+      Drizzle
+    </em>
+  </h3>
+  <h1 span class="temp">
+    <span id="temperature">18</span><a href="#" id="celsius-link">°C</a> <sup class="sup" id=""> <a href="#"
+        id="fahrenheit-link">°F</a> </sup>
+  </h1>
+  <div>
+    <h3 class="high-and-low">
+      <em>
+        H: <span id="temp_max"> 19ºC</span> L: <span id="temp_min">17ºC</span>
+      </em>
+    </h3>
+  </div>
+  <hr />
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+    <div class="col">
+      <Strong>
+        Weekly Forecast
+      </Strong>
+      <br />
+      Wednesday ☁️
+      <br />
+      Thursday 🌧
+      <br />
+      Friday 🌦
+      <br />
+      Saturday 🌧
+      <br />
+      Sunday 🌧
+      <br />
+      Monday 🌧
+      <br />
+      Tuesday 🌧
+      <br />
+      Wednesday 🌧
+      <br />
+    </div>
+    <div class="col">
+      <strong>
+        Precipitation
+      </strong>
+      <br />
+      90%
+      <br />
+      80%
+      <br />
+      50%
+      <br />
+      70%
+      <br />
+      60%
+      <br />
+      80%
+      <br />
+      70%
+      <br />
+      60%
+      <br />
+    </div>
+    <div class="col">
+      <strong>
+        Feels Like
+      </strong>
+      <br />
+      18ºC
+      <br />
+      20ºC
+      <br />
+      21ºC
+      <br />
+      21ºC
+      <br />
+      20ºC
+      <br />
+      18ºC
+      <br />
+      18ºC
+      <br />
+      20ºC
+    </div>
+    <div class="col">
+      <strong>
+        Air Quality
+      </strong>
+      <br />
+      4
+      <br />
+      5
+      <br />
+      4
+      <br />
+      4
+      <br />
+      3
+      <br />
+      5
+      <br />
+      5
+      <br />
+      3
+    </div>
+  </div>
+  </div>
+  <footer>
+    <strong>
+      Coded by Jennifer Su
+    </strong>
+  </footer>
+  <script src="src2/index.js"></script>
+  </div>
+</body>
+
+</html>
