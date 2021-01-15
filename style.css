@@ -81,6 +81,20 @@ h3 {
   font-size: 18px;
   bottom: 15px;
 }
+.gitHub {
+  text-decoration: none;
+  color: #A285AE;
+}
+.gitHub:hover {
+  text-decoration: underline;
+}
+.linkedIn {
+ text-decoration: none;
+  color: #A285AE;
+}
+.linkedIn:hover {
+  text-decoration: underline;
+}
 footer {
   text-align: center;
   color: white;
