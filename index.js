@@ -54,6 +54,7 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
+let icon = document.querySelector("#icon");
 
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -69,6 +70,8 @@ function displayWeatherCondition(response) {
   );
   document.querySelector(".current-weather-condition").innerHTML =
     response.data.weather[0].main;
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function searchCity(city) {
