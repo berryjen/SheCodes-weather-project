@@ -89,11 +89,9 @@ h3 {
 .sup {
   position: relative;
   top: -45px;
+  font-size: 22px;
 }
-#celsius-link {
-  font-size: 20px;
-  font-weight: 12px;
-}
+
 .gitHub {
   text-decoration: none;
   color: #EFDFFC;
