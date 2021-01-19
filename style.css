@@ -81,8 +81,13 @@ h3 {
   font-size: 18px;
   bottom: 15px;
 }
-.current-weather-condition img {
+#icon {
  position: relative; 
+ bottom: 8px; 
+}
+#temperature {
+  position: relative;
+  bottom: 30px;
 }
 #celsius-link {
   font-size: 20px;
