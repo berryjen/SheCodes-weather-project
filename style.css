@@ -1,5 +1,5 @@
 body {
-  background-image: url("sun-moon-lake.jpg");
+  background-image: url("../images2/sun-moon-lake.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,6 +22,7 @@ h3 {
 }
 .current-weather-condition {
   font-size: 40px;
+  text-align: center;
 }
 .high-and-low em {
   font-size: 40px;
@@ -66,10 +67,11 @@ h3 {
   font-size: 22px;
 }
 #current-location-button {
-  position: relative;
+ position: relative;
   left: 300px;
   bottom: 90px;
   border-width: 3px;
+ 
 }
 .col {
   position: relative;
@@ -86,24 +88,23 @@ h3 {
 #temperature {
   position: relative;
   bottom: 30px;
+  
 }
-
 .sup {
   position: relative;
   top: -45px;
   font-size: 22px;
 }
-
 .gitHub {
   text-decoration: none;
-  color: #EFDFFC;
+  color:#EFDFFC;
 }
 .gitHub:hover {
   text-decoration: underline;
 }
 .linkedIn {
  text-decoration: none;
-  color: #EFDFFC;;
+  color:#EFDFFC;
 }
 .linkedIn:hover {
   text-decoration: underline;
