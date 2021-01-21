@@ -33,13 +33,14 @@ function search(event) {
 function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 65;
+  let fahrenheitTemperature = (celsiusTemperature) *9 /5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 18;
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
 let dateElement = document.querySelector("#date");
@@ -49,6 +50,7 @@ dateElement.innerHTML = formatDate(currentTime);
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
+let celsiusTemperature= null;
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
