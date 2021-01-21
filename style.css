@@ -24,6 +24,7 @@ h3 {
   font-size: 40px;
   text-align: center;
 }
+
 .high-and-low em {
   font-size: 40px;
   position: relative;
@@ -88,13 +89,14 @@ h3 {
 #temperature {
   position: relative;
   bottom: 30px;
-  
 }
+
 .sup {
   position: relative;
   top: -45px;
   font-size: 22px;
 }
+
 .gitHub {
   text-decoration: none;
   color:#EFDFFC;
