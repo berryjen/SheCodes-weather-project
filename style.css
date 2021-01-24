@@ -71,6 +71,14 @@ h3 {
   bottom: 90px;
   border-width: 3px;
 }
+#celsius-link {
+  text-decoration: none;
+  color: #b497c0;
+}
+#fahrenheit-link {
+  text-decoration: none;
+  color:  #b497c0;
+}
 .col {
   position: relative;
   text-align: center;
