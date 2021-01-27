@@ -1,5 +1,5 @@
 function formatDate(date) {
-  let hours = date.getHours();
+  let date = new Date(timestamp);
   if (hours < 10) {
     hours = `0${hours}`;
   }
@@ -20,7 +20,7 @@ function formatDate(date) {
   ];
   let day = days[dayIndex];
 
-  return `${day} ${hours}:${minutes}`;
+  return `${day} ${formatHours(timestamp)}`;
 }
 
 function search(event) {
@@ -91,6 +91,7 @@ let hours = date.getHours();
   }
   return `${hours}:${minutes}`;
 }
+
 function displayForecast(response) {
 let forecastElement = document.querySelector("#forecast");
 let forecast= response.data.list[0];
