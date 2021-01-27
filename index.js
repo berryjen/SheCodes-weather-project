@@ -100,8 +100,20 @@ console.log(forecast);
 forecastElement.innerHTML = 
   `<div class="col">
       <Strong>
-        Weekly Forecast
+        3 hour forecast
       </Strong>
+      <br />
+      ${formatHours(forecast.dt * 1000)}
+        <img 
+            src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"
+            alt=""
+        />
+      <br />
+    </div>` 
+
+forecast= response.data.list[1];
+forecastElement.innerHTML =  forecastElement.innerHTML +
+  `<div class="col">
       <br />
       ${formatHours(forecast.dt * 1000)}
         <img 
