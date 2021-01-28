@@ -95,6 +95,11 @@ h3 {
   position: relative;
   bottom: 30px;
 }
+#humidity-element {
+  text-align: center; 
+  font-size: 30px;
+  color: #b497c0; 
+}
 .sup {
   position: relative;
   top: -45px;
