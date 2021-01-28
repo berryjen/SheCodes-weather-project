@@ -58,6 +58,8 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 let icon = document.querySelector("#icon");
+let humidityElement =document.querySelector("#humidity");
+let windElement= document.querySelector("#wind");
 
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -73,6 +75,8 @@ function displayWeatherCondition(response) {
   );
   document.querySelector(".current-weather-condition").innerHTML =
     response.data.weather[0].main;
+  document.querySelector("#humidity").innerHTML= response.data.main.humidity;
+  document.querySelecotr("#wind").innerHTML= Math.round(response.data.wind.speed);
   icon.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   icon.setAttribute("alt", response.data.weather[0].description);
@@ -95,12 +99,13 @@ let hours = date.getHours();
 
 function displayForecast(response) {
 let forecastElement = document.querySelector("#forecast");
-let forecast= response.data.list[0];
-console.log(forecast);
-forecastElement.innerHTML = 
+forecastElement.innerHTML= null;
+let forecast= null;
+for (let index= 0; index < 6; index++) {
+ forecast= response.data.list[index];
+forecastElement.innerHTML += 
   `<div class="col">
       <Strong>
-        3 hour forecast
       </Strong>
       <br />
       ${formatHours(forecast.dt * 1000)}
@@ -110,6 +115,8 @@ forecastElement.innerHTML =
         />
       <br />
     </div>` 
+}
+}
 
 forecast= response.data.list[1];
 forecastElement.innerHTML =  forecastElement.innerHTML +
