@@ -30,33 +30,40 @@
       `${date}, ${time}`
     </li>
   </ul>
-  <h1 class="city-name" id="city">
-    Taipei city
-  </h1>
-  <h3 class>
-    <span class="current-weather-condition"></span>
-    <img src="" alt="" id="icon" class="float-left" />
-  </h3>
-  <div class ="temp">
-    <h1 span class="temp">
+  
+  <div class="container">
+   <div class="row">
+    <div class="col-6">
+      <h1 class="city-name" id="city">
+      Taipei city
+     </h1>
+    <h3 class>
+      <span class="current-weather-condition"></span>
+      <img src="" alt="" id="icon" class="float-left" />
+    </h3>
+   <div class ="temp">
+    <div class ="temp">
+     <h1 span class="temp">
       <span id="temperature">18</span>
       <sup class ="sup" id=""> <a href="#" id="celsius-link">
       °C</a>
-    </sup>  
-    <sup class="sup" id=""> <a href="#"
+      </sup>  
+      <sup class="sup" id=""> <a href="#"
         id="fahrenheit-link">°F
        </a> 
       </sup>
     </div>
   </h1>
   </div>
-  <div>
+  <div class="col-6">
     <h3 class="high-and-low">
       <em>
         H: <span id="temp_max"></span>ºC
         L: <span id="temp_min"></span>ºC
       </em>
     </h3>
+    
+    <div class="col-6">
     <h3 id= "humidity-element">
         Humidity:
         <span id= "humidity"></span>%
@@ -65,8 +72,13 @@
       Wind: 
       <span id= "wind"></span> km/h
     </h3> 
-  </div>
-  <hr />
+       </div>
+     </div>
+   </div>
+ </div>   
+</div>
+<hr />
+  
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="forecast">
   </div>
   <footer>
