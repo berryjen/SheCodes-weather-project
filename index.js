@@ -124,6 +124,8 @@ function searchCity(city) {
   let apiKey = "f080158c041532d07353f9c3c3fc3150";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
   axios.get(`${apiUrl}&appid=${apiKey}`).then(displayWeatherCondition);
+  apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${unit}`;
+  axios.get(apiUrl).then(displayForecast);
 }
 function handleSubmit(event) {
   event.preventDefault();
