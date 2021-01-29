@@ -14,7 +14,6 @@ h1.city-name {
 }
 h1,
 h3 {
-  text-align: center;
   position: relative;
   font-family: "Texturina", serif;
   color: white;
@@ -79,7 +78,6 @@ h3 {
 }
 .col {
   position: relative;
-  text-align: center;
   font-family: "Texturina", serif;
   color: white;
   font-size: 18px;
@@ -94,7 +92,7 @@ h3 {
   bottom: 30px;
 }
 #humidity-element {
-  text-align: center; 
+  text-align: left; 
   font-size: 40px;
   color: #b497c0; 
 }
