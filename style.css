@@ -10,7 +10,7 @@ h1.city-name {
 }
 .temp {
   color: #b497c0;
-  font-size: 50px;
+  font-size: 40px;
 }
 h1,
 h3 {
@@ -26,8 +26,6 @@ h3 {
 
 .high-and-low em {
   font-size: 40px;
-  position: relative;
-  bottom: 30px;
 }
 .search {
   position: relative;
@@ -97,8 +95,14 @@ h3 {
 }
 #humidity-element {
   text-align: center; 
-  font-size: 30px;
+  font-size: 40px;
   color: #b497c0; 
+}
+#wind-element {
+  font-size: 40px; 
+}
+.col-6 {
+  text-align: left;
 }
 .sup {
   position: relative;
