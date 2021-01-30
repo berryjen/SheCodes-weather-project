@@ -61,6 +61,7 @@ h3 {
 #current-location-button {
   position: relative;
   border-width: 3px;
+  right: -150px;
 }
 
 #celsius-link {
