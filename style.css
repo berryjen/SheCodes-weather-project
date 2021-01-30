@@ -17,7 +17,6 @@ h3 {
   position: relative;
   font-family: "Texturina", serif;
   color: white;
-  top: -40px;
 }
 .current-weather-condition {
   font-size: 40px;
@@ -26,9 +25,9 @@ h3 {
 .high-and-low em {
   font-size: 40px;
 }
+
 .search {
   position: relative;
-  right: 55px;
   margin: 5px 5px;
   width: 200px;
   border-width: 3px;
@@ -41,9 +40,6 @@ h3 {
   width: 50px;
   height: 45px;
   position: relative;
-  left: 230px;
-  bottom: 60px;
-  margin: 0;
   right: 5px;
   top: -52px;
   margin: 5px 5px;
@@ -53,29 +49,30 @@ h3 {
   border-width: 3px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
+
 #date {
   font-family: "Texturina", serif;
   color: white;
   list-style-type: none;
   position: relative;
-  bottom: 85px;
-  right: 18px;
   font-size: 22px;
 }
+
 #current-location-button {
   position: relative;
-  left: 300px;
-  bottom: 90px;
   border-width: 3px;
 }
+
 #celsius-link {
   text-decoration: none;
   color: #b497c0;
 }
+
 #fahrenheit-link {
   text-decoration: none;
   color:  #b497c0;
 }
+
 .col {
   position: relative;
   font-family: "Texturina", serif;
@@ -83,6 +80,7 @@ h3 {
   font-size: 18px;
   bottom: 15px;
 }
+
 #icon {
  position: relative; 
  bottom: 8px; 
@@ -91,36 +89,44 @@ h3 {
   position: relative;
   bottom: 30px;
 }
+
 #humidity-element {
-  text-align: left; 
   font-size: 40px;
   color: #b497c0; 
 }
+
 #wind-element {
   font-size: 40px; 
 }
+
 .col-6 {
   text-align: left;
 }
+
 .sup {
   position: relative;
   top: -45px;
   font-size: 22px;
 }
+
 .gitHub {
   text-decoration: none;
   color: #EFDFFC;
 }
+
 .gitHub:hover {
   text-decoration: underline;
 }
+
 .linkedIn {
  text-decoration: none;
   color: #EFDFFC;;
 }
+
 .linkedIn:hover {
   text-decoration: underline;
 }
+
 footer {
   text-align: center;
   color: white;
