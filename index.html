@@ -12,8 +12,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
+  
 <body>
-  <form id="search-form">
+  <div class="container">
+    <div class="row mt-5 text-center">
+      <div class="col">
+    <form id="search-form">
     <div class="container">
       <input type="search" id="cityInput" class="search" autofocus="on" placeholder="City" autocomplte="off" />
     </div>
@@ -24,16 +28,22 @@
       <input type="submit" value="Current" id="weatherInfo" class="description" autofocus=" on" placeholder="GO"
         autocomplte="off" />
     </div>
-  </form>
-  <ul>
+     </form>
+  </div>
+    </div>
+  </div>
+ <div class="row text-center">
+  <div class="col">      
+   <ul>
     <li id="date">
       `${date}, ${time}`
     </li>
-  </ul>
-  
-  <div class="container">
-   <div class="row">
-    <div class="col-6">
+   </ul>
+  </div>
+  </div>
+   
+  <div class="row mt-3">
+   <div class="col-6 text-center">
       <h1 class="city-name" id="city">
       Taipei city
      </h1>
@@ -54,8 +64,10 @@
       </sup>
     </div>
   </h1>
+  </div>      
   </div>
-  <div class="col-6">
+  
+  <div class="col-6 text-center">
     <h3 class="high-and-low">
       <em>
         H: <span id="temp_max"></span>ºC
@@ -72,9 +84,6 @@
       Wind: 
       <span id= "wind"></span> km/h
     </h3> 
-       </div>
-     </div>
-   </div>
  </div>   
 </div>
 <hr />
