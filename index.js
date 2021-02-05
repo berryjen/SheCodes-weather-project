@@ -127,6 +127,7 @@ function searchCity(city) {
   apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${unit}`;
   axios.get(apiUrl).then(displayForecast);
 }
+
 function handleSubmit(event) {
   event.preventDefault();
   let city = document.querySelector("#cityInput").value;
@@ -139,6 +140,7 @@ function searchLocation(position) {
   axios.get(apiUrl).then(displayWeatherCondition); 
   axios.get(apiUrl).then(displayForecast);
 }
+
 let unit = "metric";
 
 function getCurrentLocation(event) {
