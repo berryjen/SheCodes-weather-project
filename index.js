@@ -118,7 +118,7 @@ for (let index= 0; index < 6; index++) {
       <br />
     </div>` 
 }
-}
+
 
 function searchCity(city) {
   let apiKey = "f080158c041532d07353f9c3c3fc3150";
