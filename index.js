@@ -85,10 +85,14 @@ function displayWeatherCondition(response) {
   celsiusTemperature= response.data.main.temp;
   document.querySelector("#forecast").innerHTML= formatDate(response.data.dt*1000);
   const weatherId= String(response.weather[0].id)
+  const cloudyPattern= /^8(?!00)0\d/
   const thunderstorm= /^2\d\d/
   if (thunderstorm.test(weatherId)) {
     document.querySelector("iframe").setAttribute("src", "https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=EF5466&layout=&size=medium&type=tracks&id=555755&app_id=1")
   }
+  if (cloudyPattern.test(weatherId)) {
+    document.querySelector("iframe").setAttribute("src", "https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=EF5466&layout=&size=medium&type=tracks&id=2312047&app_id=1")
+      }
 }
 
 function formatHours(timestamp) {
