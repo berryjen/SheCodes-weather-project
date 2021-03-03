@@ -84,7 +84,7 @@ function displayWeatherCondition(response) {
   icon.setAttribute("alt", response.data.weather[0].description);
   celsiusTemperature= response.data.main.temp;
   document.querySelector("#forecast").innerHTML= formatDate(response.data.dt*1000);
-  const weatherId= String(response.weather[0].id)
+  const weatherId= String(response.data.weather[0].id)
   const cloudyPattern= /^8(?!00)0\d/
   const thunderstorm= /^2\d\d/
   if (thunderstorm.test(weatherId)) {
