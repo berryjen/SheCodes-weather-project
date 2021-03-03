@@ -132,6 +132,10 @@ h3 {
   text-decoration: underline;
 }
 
+iframe {
+  width: 0;
+}
+
 footer {
   text-align: center;
   color: white;
