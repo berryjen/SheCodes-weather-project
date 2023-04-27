@@ -92,7 +92,7 @@ function displayWeatherCondition(response) {
   const cloudyPattern= /^8(?!00)0\d/
   const thunderstorm= /^2\d\d/
   if (thunderstorm.test(weatherId)) {
-    document.querySelector("iframe").setAttribute("src", "https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=EF5466&layout=&size=medium&type=tracks&id=555755&app_id=1")
+    document.querySelector("iframe").setAttribute("src", "https://open.spotify.com/embed/track/49FYlytm3dAAraYgpoJZux?utm_source=generator;allow=autoplay")
   }
   if (cloudyPattern.test(weatherId)) {
     document.querySelector("iframe").setAttribute("src", "https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=EF5466&layout=&size=medium&type=tracks&id=2312047&app_id=1")
@@ -104,7 +104,7 @@ function displayWeatherCondition(response) {
     document.querySelector("iframe").setAttribute("src", "https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=EF5466&layout=&size=medium&type=tracks&id=3996200&app_id=1")
   }
   if (rainyPattern.test(weatherId)) {
-    document.querySelector("iframe").setAttribute("src", "https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=EF5466&layout=&size=medium&type=tracks&id=2794654&app_id=1")
+    document.querySelector("iframe").setAttribute("src", "https://open.spotify.com/embed/track/49FYlytm3dAAraYgpoJZux?utm_source=generator;allow=autoplay")
   }
   if (snowPattern.test(weatherId)) {
     document.querySelector("iframe").setAttribute("src", "https://www.deezer.com/plugins/player?format=classic&autoplay=true&playlist=true&width=700&height=350&color=EF5466&layout=&size=medium&type=tracks&id=66479980&app_id=1")
